@@ -25,10 +25,9 @@ const AuthScreen = ({children}) => {
       ]}>
         
       </AmplifySignUp>
-      <div className="App">
+      
         {children}
-        <AmplifySignOut />
-      </div>
+        {/* <AmplifySignOut /> */}
     </AmplifyAuthenticator>
   );
 }

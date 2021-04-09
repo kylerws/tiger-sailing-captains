@@ -21,7 +21,11 @@ function useProvideAuth() {
   const [user, setUser] = useState()
   // const [authState, setAuthState] = useState()
   
-  // Sign in user with credentials
+  // Sign out
+  const signOut = async () => {
+    await Auth.signOut()
+      .catch(console.error)
+  }
   
   const listenOnAuth = (data) => {
     switch (data.payload.event) {
@@ -68,6 +72,7 @@ function useProvideAuth() {
 
   return {
     loading,
-    user
+    user,
+    signOut
   }
 }

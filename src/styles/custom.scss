@@ -1,0 +1,24 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Overrides
+$theme-colors: (
+  "trans": rgba(0, 0, 0, 0),
+  "sky-blue": #2c9db9,
+  "deep-blue": #084C61,
+  "ultra-blue": #446DF6,
+  "golden": #ffb700,
+  "red": #f83c3c,
+  "dark-red": #9a031e,
+  "dark-sienna": #4C212A,
+  "dim-gray": #716969,
+  "jet": #323031,
+  "beige": #f5f0e8 
+);
+
+.blur {
+  backdrop-filter: blur(10px);
+}
+
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
