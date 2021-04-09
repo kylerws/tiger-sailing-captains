@@ -6,5 +6,6 @@
       "dependsOn": [],
       "customAuth": false
     }
-  }
+  },
+  "api": {}
 }
