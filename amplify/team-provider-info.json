@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyfb6ff0f8cd254-staging-234011-authRole",
+      "UnauthRoleArn": "arn:aws:iam::703741371885:role/amplify-amplifyfb6ff0f8cd254-staging-234011-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::703741371885:role/amplify-amplifyfb6ff0f8cd254-staging-234011-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-amplifyfb6ff0f8cd254-staging-234011-deployment",
+      "UnauthRoleName": "amplify-amplifyfb6ff0f8cd254-staging-234011-unauthRole",
+      "StackName": "amplify-amplifyfb6ff0f8cd254-staging-234011",
+      "StackId": "arn:aws:cloudformation:us-west-2:703741371885:stack/amplify-amplifyfb6ff0f8cd254-staging-234011/c313ee00-98c3-11eb-a758-0af1e1309477",
+      "AmplifyAppId": "d29jki8y1mb4vi"
+    },
+    "categories": {
+      "auth": {
+        "tigersailingcaptains": {}
+      }
+    }
+  }
+}
