@@ -1,0 +1,79 @@
+{
+    "paths": [
+        {
+            "name": "/times",
+            "lambdaFunction": "tigersailingtimes",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            },
+            "policyResourceName": "/times"
+        },
+        {
+            "name": "/availability",
+            "lambdaFunction": "gatewayEndpointHandlers",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            },
+            "policyResourceName": "/availability"
+        }
+    ],
+    "resourceName": "tigerSailingApi",
+    "apiName": "tigerSailingApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "tigersailingtimes"
+        },
+        {
+            "lambdaFunction": "gatewayEndpointHandlers"
+        }
+    ],
+    "privacy": {
+        "auth": 2,
+        "unauth": 2,
+        "authRoleName": "amplify-tigersailingcaptains-dev-142421-authRole",
+        "unAuthRoleName": "amplify-tigersailingcaptains-dev-142421-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "tigersailingtimes",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "gatewayEndpointHandlers",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "dd17ac37"
+}

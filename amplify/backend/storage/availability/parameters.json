@@ -1,0 +1,7 @@
+{
+    "tableName": "availability",
+    "partitionKeyName": "captainCIID",
+    "partitionKeyType": "S",
+    "sortKeyName": "startTime",
+    "sortKeyType": "S"
+}

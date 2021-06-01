@@ -1,8 +1,18 @@
 import React from 'react'
-import { AmplifyAuthenticator, AmplifySignUp, AmplifySignOut } from '@aws-amplify/ui-react'
+import { AmplifyAuthenticator, AmplifySignUp } from '@aws-amplify/ui-react'
+import { Redirect } from 'react-router-dom'
+import { useAuth } from './useAuth'
 
-const AuthScreen = ({children}) => {
-  return (
+const AuthScreen = ({from}) => {
+  let auth = useAuth()
+
+  if (auth.loading) {
+    console.log("Auth loading...")
+    return <div>Loading...</div>
+  }
+
+  return !auth.user ? 
+  (
     <AmplifyAuthenticator usernameAlias="email">
       <AmplifySignUp slot="sign-up" formFields={[
         {
@@ -22,14 +32,10 @@ const AuthScreen = ({children}) => {
           type: "phone_number",
           required: true
         }
-      ]}>
-        
-      </AmplifySignUp>
-      
-        {children}
-        {/* <AmplifySignOut /> */}
+      ]}></AmplifySignUp>
+
     </AmplifyAuthenticator>
-  );
+  ) : <Redirect to={{pathname: '/dashboard', state: {from: from}}} />
 }
 
 export default AuthScreen

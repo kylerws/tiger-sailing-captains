@@ -1,6 +1,6 @@
 {
     "identityPoolName": "testAuthIdentityPool",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "tigerse3a9f9d6",
     "userPoolName": "tigersailingcaptains",
     "autoVerifiedAttributes": [

@@ -1,0 +1,5 @@
+{
+    "tableName": "AvailableTimesDev",
+    "partitionKeyName": "captainID",
+    "partitionKeyType": "N"
+}

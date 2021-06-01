@@ -49,7 +49,7 @@ function useProvideAuth() {
         console.log("Password changed successfully")
         break
       default:
-        console.log("Unhandled auth case:")
+        console.log(data.payload.event + ": " + data.payload.message)
         console.log(data.payload)
     }
   }

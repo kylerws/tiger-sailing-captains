@@ -1,19 +1,29 @@
 {
-  "staging": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyfb6ff0f8cd254-staging-234011-authRole",
-      "UnauthRoleArn": "arn:aws:iam::703741371885:role/amplify-amplifyfb6ff0f8cd254-staging-234011-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::703741371885:role/amplify-amplifyfb6ff0f8cd254-staging-234011-authRole",
+      "AuthRoleName": "amplify-tigersailingcaptains-dev-142421-authRole",
+      "UnauthRoleArn": "arn:aws:iam::459577955589:role/amplify-tigersailingcaptains-dev-142421-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::459577955589:role/amplify-tigersailingcaptains-dev-142421-authRole",
       "Region": "us-west-2",
-      "DeploymentBucketName": "amplify-amplifyfb6ff0f8cd254-staging-234011-deployment",
-      "UnauthRoleName": "amplify-amplifyfb6ff0f8cd254-staging-234011-unauthRole",
-      "StackName": "amplify-amplifyfb6ff0f8cd254-staging-234011",
-      "StackId": "arn:aws:cloudformation:us-west-2:703741371885:stack/amplify-amplifyfb6ff0f8cd254-staging-234011/c313ee00-98c3-11eb-a758-0af1e1309477",
-      "AmplifyAppId": "d29jki8y1mb4vi"
+      "DeploymentBucketName": "amplify-tigersailingcaptains-dev-142421-deployment",
+      "UnauthRoleName": "amplify-tigersailingcaptains-dev-142421-unauthRole",
+      "StackName": "amplify-tigersailingcaptains-dev-142421",
+      "StackId": "arn:aws:cloudformation:us-west-2:459577955589:stack/amplify-tigersailingcaptains-dev-142421/f34b76c0-9e30-11eb-8016-02f69856dc3d",
+      "AmplifyAppId": "d3qc5xvxc8ze3r"
     },
     "categories": {
       "auth": {
         "tigersailingcaptains": {}
+      },
+      "function": {
+        "tigersailingtimes": {
+          "deploymentBucketName": "amplify-tigersailingcaptains-dev-142421-deployment",
+          "s3Key": "amplify-builds/tigersailingtimes-55485a6d78572f456f30-build.zip"
+        },
+        "gatewayEndpointHandlers": {
+          "deploymentBucketName": "amplify-tigersailingcaptains-dev-142421-deployment",
+          "s3Key": "amplify-builds/gatewayEndpointHandlers-6d6e7a6a6e6450572f79-build.zip"
+        }
       }
     }
   }

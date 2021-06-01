@@ -22,11 +22,16 @@ const NavBar = ({scrollTop}) => {
 const ProfileButtons = () => {
   let auth = useAuth()
 
+  const viewProfile = e => {
+    e.preventDefault()
+    console.log("View profile clicked")
+  }
+
   return (
     <Row className="ml-auto">
       <Col className="d-flex align-items-center pr-0">
         <Button size="sm" variant="outline-golden"
-          onClick={console.log("profile")}>Profile</Button>
+          onClick={viewProfile}>Profile</Button>
       </Col>
       <Col className=" align-items-center">
         <Button size="sm" variant="outline-dark-red"
