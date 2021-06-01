@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useAuth } from '../auth/useAuth'
+// import { useAuth } from '../hooks/useAuth'
 import { Container, Button } from 'react-bootstrap';
 import { API } from 'aws-amplify';
 

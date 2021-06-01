@@ -1,7 +1,7 @@
 import React from 'react'
 import { AmplifyAuthenticator, AmplifySignUp } from '@aws-amplify/ui-react'
 import { Redirect } from 'react-router-dom'
-import { useAuth } from './useAuth'
+import { useAuth } from '../hooks/useAuth'
 
 const AuthScreen = ({from}) => {
   let auth = useAuth()

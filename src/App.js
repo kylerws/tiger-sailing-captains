@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
-import { AuthProvider, useAuth } from './auth/useAuth'
+import { AuthProvider, useAuth } from './hooks/useAuth'
 import AuthScreen from './auth/AuthScreen'
 import NavBar from './components/NavBar'
 import Dashboard from './components/Dashboard'

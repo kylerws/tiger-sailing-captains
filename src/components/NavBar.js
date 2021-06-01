@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAuth } from '../auth/useAuth'
+import { useAuth } from '../hooks/useAuth'
 import { Navbar, Row, Col, Button } from 'react-bootstrap'
 
 const NavBar = ({scrollTop}) => {
